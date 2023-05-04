@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(Images/NoNameGuys.png);
+    color: #ededed;
+    background-position: center;
+    background-size: cover;
+}
+
+.Head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: darkred;
+    background: transparent;
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255,255,255,1.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.TopBar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.TopBar a:hover,
+.TopBar a.active {
+    color: red;
+}
+
+.Home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.HomePage{
+    max-width: 600px;
+}
+
+.HomePage h1{
+    font-size: 56px;
+    font-weight: 700;
+    color: red;
+}
+
+.HomePage h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.HomePage p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+    line-height: 1.2;
+}
+
+.HomePage .Button-Box{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center ;
+    border: 1px solid;
+    border-radius: 10px;
+    
+}
+
+.Button-Box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border: 1px solid none;
+    border-radius: 10px;
+    font-size: 19px;
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.Button-Box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: darkred;
+    z-index: -1;
+    transition: .5s;
+}
+
+.Button-Box a:hover::before{
+    width: 100%;
+}
+
+.Home-Lin{
+    position: absolute;
+    bottom: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.Home-Lin a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid darkred;
+    border-radius: 50%;
+    font-size: 20px;
+    color: darkblue;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.Home-Lin a::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: darkred;
+        z-index: -1;
+        transition: .5s;
+}
+
+.Home-Lin a:hover::before{
+    width: 100%;
+}
